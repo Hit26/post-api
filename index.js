@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const respRoutes = require('./routes/responses');
 
-app.use(express.text());
+app.use(express.raw());
 //routes
 app.use('/api/responses',respRoutes);
 
